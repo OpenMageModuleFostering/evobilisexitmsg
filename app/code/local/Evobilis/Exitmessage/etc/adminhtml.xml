@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+	<config>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<evobilis_exitmsg_section translate="title" module="modulename">
+											<title>Checkout Exit Message Section</title>
+											<sort_order>0</sort_order>
+										</evobilis_exitmsg_section>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</config>

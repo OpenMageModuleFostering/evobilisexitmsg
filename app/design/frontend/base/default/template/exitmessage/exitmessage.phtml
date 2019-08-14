@@ -1,0 +1,30 @@
+<? 
+$request=Mage::app()->getFrontController()->getRequest();  // Fecth the request from the frontend controller.
+$session = Mage::getSingleton('checkout/session');  // Get the cart session singleton.
+$items=$session->getQuote()->getAllItems(); // Get the items of the cart.
+$total_items=count($items); // Count the items of the cart.
+
+//Custom Messages
+$evobilis_exitmsg_cart="You have $total_items items in your cart.";
+$evobilis_exitmsg_confirm="Are you sure you want to exit the checkout?";
+
+//Display only on checkout page & there exist atleast one item on the cart.
+if($request->getControllerName()=='onepage' && $request->getModuleName()=='checkout' && $total_items>0): ?>
+
+<!-- Evobilis Checkout Exit Message Javascript -->
+<script type="text/javascript">
+	var evobilis_checkoutexitmsg="<?=$evobilis_exitmsg_cart;?> <?=$evobilis_exitmsg_confirm;?>";
+</script>
+
+<!-- Evobilis Checkout Exit Message Overlay -->
+<div class="exit-overlay">
+    <div class="exit-overlay-msg">
+    <B><?=$evobilis_exitmsg_cart;?><BR />
+	<? $msg=Mage::getStoreConfig('evobilis_exitmsg_section/evobilis_exitmsg_group/evobilis_exitmsg_custommsg'); 
+	if($msg!=NULL) echo '<BR>'.$msg.'<BR>'; ?><BR />Optional Feedback<BR /><textarea id="feedback" name="feedback" style="margin: 0px; width: 283px; height: 84px;"></textarea><? $email=Mage::getSingleton('customer/session')->getCustomer()->getEmail(); if($email==NULL) { echo '<BR><BR>Email: <input type="text" name="email" id="email">'; } else { echo '<input type="hidden" name="email" id="email">';}?>
+    <BR /><BR /><?=$evobilis_exitmsg_confirm;?></B><BR /><BR />
+    <button type="button" title="Continue with checkout" onclick="evoExitFeedback('0')" class="button exit-overlay-close"><span><span>Continue</span></span></button>    
+    <button type="button" title="Continue with checkout" onclick="evoExitFeedback('1');" class="button"><span><span>Exit Checkout</span></span></button><input type="hidden" id="exit-overlay-refer" />
+    </div>
+</div>
+<? endif;?>

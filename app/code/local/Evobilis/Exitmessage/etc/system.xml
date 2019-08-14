@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<evobilis translate="label" module="exitmessage">
+            <label>Evobilis</label>
+            <sort_order>0</sort_order>
+        </evobilis>
+	  </tabs>
+	  <sections>
+		<evobilis_exitmsg_section  translate="label" module="exitmessage">                    
+		<label>Checkout Exit Message</label>
+		<tab>evobilis</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>1000</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <evobilis_exitmsg_group translate="label"> 
+					  <label>Checkout Exit Message</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <evobilis_exitmsg_custommsg translate="label">
+                            <label>Custom Message</label>
+							<frontend_type>textarea</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Custom message to be displayed on the checkout exit overlay</comment>
+                          </evobilis_exitmsg_custommsg>
+					   </fields>
+					   </evobilis_exitmsg_group>
+					</groups>
+		</evobilis_exitmsg_section>
+	  </sections>
+</config>

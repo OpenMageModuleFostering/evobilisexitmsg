@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+         <modules>
+                <Evobilis_Exitmessage>
+                        <active>true</active>
+                        <codePool>local</codePool>
+                </Evobilis_Exitmessage>
+         </modules>
+</config>

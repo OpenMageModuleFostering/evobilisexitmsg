@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <exitmessage_adminhtml_exitmessagebackend_index>
+	<reference name="content">
+	  <block type="exitmessage/adminhtml_exitmessagebackend" name="exitmessagebackend" template="exitmessage/exitmessagebackend.phtml"/>
+	</reference>
+  </exitmessage_adminhtml_exitmessagebackend_index>
+  <exitmessage_adminhtml_exitmessage_index>
+	<reference name="content">
+	  <block type="exitmessage/adminhtml_exitmessage" name="exitmessage" />
+	</reference>
+  </exitmessage_adminhtml_exitmessage_index>
+</layout>

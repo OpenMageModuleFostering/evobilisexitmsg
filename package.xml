@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+    <name>evobilisexitmsg</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.evobilis.com">Evobilis</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The idea of this plugin is to capture customer feedback when they are exiting the checkout process without completing the purchase.</summary>
+    <description>The idea of this plugin is to capture customer feedback when they are exiting the checkout process without completing the purchase.&#xD;
+On the Checkout page, it produces a nice overlay when clicked on any link or when the user tries to close the page (other than the checkout process).&#xD;
+The overlay has a simple &amp; optional feedback form &amp; buttons to continue with checkout process or exit the page. &#xD;
+On clicking exit button,it auto-redirects to the link that has been clicked earlier for navigation.&#xD;
+In Addition, when the feedback is submitted, it sends a mail to notify about the feedback to the general email address specified on the store email address under configuration.&#xD;
+It also creates a log of the feedbacks submitted which can be viewed on the 'Feedback' menu,under the Adminpanel.</description>
+    <notes>The idea of this plugin is to capture customer feedback when they are exiting the checkout process without completing the purchase.</notes>
+    <authors><author><name>Mahesh Komarraju</name><user>Mahesh</user><email>mahesh.komarraju@evobilis.com</email></author></authors>
+    <date>2013-03-04</date>
+    <time>11:00:55</time>
+    <contents><target name="magelocal"><dir name="Evobilis"><dir name="Exitmessage"><dir name="Block"><dir name="Adminhtml"><dir name="Exitmessage"><dir name="Edit"><file name="Form.php" hash="12de6c7f556223152743e355d639bbdc"/><dir name="Tab"><file name="Form.php" hash="36c40d204cfb9ac50a95841f9bde14c0"/></dir><file name="Tabs.php" hash="e1982750b73127501fa9918399cad3ad"/></dir><file name="Edit.php" hash="5de316100c4f3f662d20757bcd5a532e"/><file name="Grid.php" hash="ebcb0345f5c1de50fc274219b90ba516"/></dir><file name="Exitmessage.php" hash="62c57c31cb6d447b33d5763e61be0f65"/></dir><file name="Exitmessage.php" hash="4200d5537e076e07604a29a377115fca"/></dir><dir name="Helper"><file name="Data.php" hash="2ca4e189911868dcaa327849a2bac96e"/></dir><dir name="Model"><file name="Exitmessage.php" hash="9c5bb7ae23a0d705618113795ab7889a"/><dir name="Mysql4"><dir name="Exitmessage"><file name="Collection.php" hash="25b401099b696a8e260a875c6f6d0bf1"/></dir><file name="Exitmessage.php" hash="ccf89edcf50dcc81696d0e298c4e52c5"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="ExitmessageController.php" hash="b55152af99a62855156a09c7698d9783"/></dir><file name="IndexController.php" hash="4bf13824b1989d654ba609eacfd5b3d5"/></dir><dir name="etc"><file name="adminhtml.xml" hash="41093671472a5350979b6a34bb2ab172"/><file name="config.xml" hash="009acfe675a958ea1fe9cf28158e4aea"/><file name="system.xml" hash="86be19ddc225fd8bf6fc7fbd7f8290f3"/></dir><dir name="sql"><dir name="exitmessage_setup"><file name="mysql4-install-0.1.0.php" hash="c08f356dcd2bf1782d04e8fcab372226"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Evobilis_Exitmessage.xml" hash="c6d61c44ba03b69cc450b5efd2fda531"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="exitmessage.xml" hash="100dbddad2f4b11fe91c3a50848da39b"/></dir><dir name="template"><dir name="exitmessage"><file name="exitmessage.phtml" hash="fd4ea2e81b6fa46b163a881be91f2ddc"/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="exitmessage.xml" hash="4adeb8bad3cfa63953d9016e5482f102"/></dir><dir name="template"><dir name="exitmessage"><file name="exitmessagebackend.phtml" hash="93ad3e798b60ad33539a944088478690"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="evo-exitmsg.css" hash="152215c682c2fdb63e313cfb9841f2c7"/></dir><dir name="js"><file name="evo-exitmsg.js" hash="69138e7ab78a81e700c74728ccf173b7"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>5.4.6</max></php></required></dependencies>
+</package>
